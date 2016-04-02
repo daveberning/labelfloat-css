@@ -13,8 +13,9 @@ LabelFloat.css is compatible with Chrome, Firefox, Safari, Opera, Edge, and Inte
 <link rel="stylesheet" href="css/LabelFloat.css">
 ```
 
-##2. Link jQuery Validate, Modernizr and Selectivr CDN's
+##2. Link Latest jQuery Library, jQuery Validate, Modernizr and Selectivr CDN's
 ```html
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js"></script><!-- jQuery Validate CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script><!-- Modernizr CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script><!-- Selectivir CDN -->
@@ -81,8 +82,9 @@ LabelFloat.css is a CSS file that allows web developers and designers to create 
 ```html
 <link rel="stylesheet" href="css/LabelFloat.css">
 ```
-##3. Link jQuery Validate, Modernizr and Selectivr CDN's
+##3. Link Latest JQuery Library, jQuery Validate, Modernizr and Selectivr CDN's
 ```html
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js"></script><!-- jQuery Validate CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script><!-- Modernizr CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script><!-- Selectivir CDN -->

@@ -1,7 +1,3 @@
-LabelFloat.css
-
-LabelFloat.css is a css plugin developed by Dave Berning built off of CSS Tricks' floating form labels. Easily create forms with engaging animations and full validation.
-
 #Getting Started
 
 LabelFloat.css is a plugin developed by Dave Berning. This plugin makes creating exciting animated forms quick and easy. It's based off of Chris Coyier's take on stylized floating labels; using labels as placeholders. Installation is simple and creating your webform is just as easy (as long as you follow the proper HTML structure). Let's get started!

@@ -145,3 +145,6 @@ Version 2 will come with refactored code and SASS support.
 
 #Change Log
 V1: Uploaded LabelFloat.css and LabelFloat.js
+
+#Support
+For support, please email: dave@daveberning.com

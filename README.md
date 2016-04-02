@@ -142,4 +142,4 @@ Change the colors to the focus, inactive, and invalid focus states! Just find an
 Version 2 will come with refactored code and SASS support.
 
 #Change Log
-Uploaded LabelFloat.css and LabelFloat.js
+V1: Uploaded LabelFloat.css and LabelFloat.js

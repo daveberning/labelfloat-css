@@ -156,3 +156,6 @@ Version 2 will come with refactored code and SASS support.
 #Support
 For support, please email: dave@daveberning.com
 Visit: http://labelfloat.daveberning.com
+
+# License 
+Code released under the [MIT license](https://github.com/daveberning/LabelFloat.css/blob/master/LICENSE.md).

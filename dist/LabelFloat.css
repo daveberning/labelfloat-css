@@ -457,12 +457,12 @@ select + label {
 }
 
 /* additional radio and checkboxes */
-.lf-radio.radio-hollow input:checked + label::before {
+.lf-radio.lf-radio-hollow input:checked + label::before {
     background: white;
     border: 6px solid #366b7b;
 }
 
-.lf-checkbox.checkbox-check input:checked + label::before {
+.lf-checkbox.lf-checkbox-check input:checked + label::before {
     font-family: 'Glyphicons Halflings';
     content:"\e013";
     color: white;

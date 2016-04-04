@@ -150,8 +150,9 @@ Change the colors to the focus, inactive, and invalid focus states! Just find an
 Version 2 will come with refactored code and SASS support.
 
 #Change Log
-V1.1: Updated base labelfloat css classes from "labelfloat-" to "lf-". Also added an additional style of radio and checkboxes.
+V1.1: Updated base label float css classes from "labelfloat-" to "lf-". Also added an additional style for radio buttons and checkboxes.
 V1: Uploaded LabelFloat.css and LabelFloat.js
 
 #Support
 For support, please email: dave@daveberning.com
+Visit: http://labelfloat.daveberning.com

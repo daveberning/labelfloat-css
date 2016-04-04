@@ -343,12 +343,12 @@ select + label {
   padding: 0 !important;
 }
 
-/* .labelfloat-select {
+/* .lf-select {
   border: 2px solid #545454;
   padding: 5px 2px;
 } */
 
-.labelfloat-select select {
+.lf-select select {
   background: transparent;
   width: 100%;
   padding: 5px;
@@ -358,18 +358,18 @@ select + label {
   padding: 5px 2px;
 }
 
-.labelfloat-select select:focus {
+.lf-select select:focus {
   outline: none;
 }
 
-.labelfloat-radio,
-.labelfloat-checkbox {
+.lf-radio,
+.lf-checkbox {
   position: relative;
   margin: 5px 0;
 }
 
-.labelfloat-radio input,
-.labelfloat-checkbox input {
+.lf-radio input,
+.lf-checkbox input {
   opacity: 0;
   z-index: 100;
   margin: 0 !important;
@@ -379,35 +379,35 @@ select + label {
 }
 
 
-.labelfloat-radio input + label,
-.labelfloat-checkbox input + label,
+.lf-radio input + label,
+.lf-checkbox input + label,
 
-.labelfloat-radio input:checked + label,
-.labelfloat-checkbox input:checked + label,
+.lf-radio input:checked + label,
+.lf-checkbox input:checked + label,
 
-.labelfloat-radio input:focus + label,
-.labelfloat-checkbox input:focus + label,
+.lf-radio input:focus + label,
+.lf-checkbox input:focus + label,
 
-.labelfloat-radio input.error + label,
-.labelfloat-checkbox input.error + label,
+.lf-radio input.error + label,
+.lf-checkbox input.error + label,
 
-.labelfloat-radio input.error:checked + label,
-.labelfloat-checkbox input.error:checked + label,
+.lf-radio input.error:checked + label,
+.lf-checkbox input.error:checked + label,
 
-.labelfloat-radio input.error:focus + label,
-.labelfloat-checkbox input.error:focus + label,
+.lf-radio input.error:focus + label,
+.lf-checkbox input.error:focus + label,
 
-.labelfloat-radio input.valid:valid:not(:focus) + label,
-.labelfloat-checkbox input.valid:valid:not(:focus) + label {
+.lf-radio input.valid:valid:not(:focus) + label,
+.lf-checkbox input.valid:valid:not(:focus) + label {
   margin: 0 !important;
   font-size: inherit !important;
   padding: 0 !important;
 }
 
 
-.labelfloat-radio input,
-.labelfloat-radio label,
-.labelfloat-checkbox input,
+.lf-radio input,
+.lf-radio label,
+.lf-checkbox input,
 .label-float-checkbox label {
   display: inline-block;
   vertical-align: middle;
@@ -416,16 +416,16 @@ select + label {
 }
 
 
-.labelfloat-radio label,
-.labelfloat-checkbox label {
+.lf-radio label,
+.lf-checkbox label {
   position: relative;
 }
 
-.labelfloat-radio input + label::before,
-.labelfloat-checkbox input + label::before,
+.lf-radio input + label::before,
+.lf-checkbox input + label::before,
 
-.labelfloat-radio input.error + label + label::before,
-.labelfloat-checkbox input.error + label::before {
+.lf-radio input.error + label + label::before,
+.lf-checkbox input.error + label::before {
   content: '';
   background: #545454;
   display: inline-block;
@@ -436,26 +436,38 @@ select + label {
   margin-right: 10px;
 }
 
-.labelfloat-radio input + label::before,
-.labelfloat-radio input.error + label + label::before {
+.lf-radio input + label::before,
+.lf-radio input.error + label + label::before {
   border-radius: 50%;
 }
 
-.labelfloat-radio input:checked + label::before,
-.labelfloat-checkbox input:checked + label::before {
+.lf-radio input:checked + label::before,
+.lf-checkbox input:checked + label::before {
   background: #366b7b;
 }
 
-.labelfloat-radio input.error  + label::before,
-.labelfloat-checkbox input.error + label::before {
+.lf-radio input.error  + label::before,
+.lf-checkbox input.error + label::before {
   background: #DA5757;
 }
 
-.labelfloat-radio input.error  + label,
-.labelfloat-checkbox input.error  + label {
+.lf-radio input.error  + label,
+.lf-checkbox input.error  + label {
   text-transform: inherit !important;
 }
 
+/* additional radio and checkboxes */
+.lf-radio.radio-hollow input:checked + label::before {
+    background: white;
+    border: 6px solid #366b7b;
+}
+
+.lf-checkbox.checkbox-check input:checked + label::before {
+    font-family: 'Glyphicons Halflings';
+    content:"\e013";
+    color: white;
+    padding: 0 0 0px 3px;
+}
 
 
 /* IE FIXES
@@ -464,7 +476,7 @@ select + label {
 .no-csstransitions textarea {
   width: 100%;
   padding: 5px !important;
-  
+
   border-top: 2px solid #545454;
   border-right: 2px solid #545454;
   border-bottom: none;
@@ -476,7 +488,7 @@ select + label {
   background-color: #545454 !important;
   padding: 4px !important;
   font-size: 10px;
-  
+
   border-top: none;
   border-right: 2px solid #545454;
   border-bottom: 2px solid #545454;
@@ -487,40 +499,40 @@ select + label {
   color: white !important;
 }
 
-.no-csstransitions .labelfloat-checkbox label,
-.no-csstransitions .labelfloat-checkbox label + label,
-.no-csstransitions .labelfloat-radio label,
-.no-csstransitions .labelfloat-radio label + label,
-.no-csstransitions .labelfloat-radio input,
-.no-csstransitions .labelfloat-checkbox input,
-.no-csstransitions .labelfloat-radio input.error + label,
-.no-csstransitions .labelfloat-radio input.error + label + label,
-.no-csstransitions .labelfloat-checkbox input.error + label,
-.no-csstransitions .labelfloat-checkbox input.error + label + label,
-.no-csstransitions .labelfloat-radio input:focus + label,
-.no-csstransitions .labelfloat-radio input:focus + label + label,
-.no-csstransitions .labelfloat-checkbox input:focus + label,
-.no-csstransitions .labelfloat-checkbox input:focus + label + label,
-.no-csstransitions .labelfloat-radio input.error:focus + label,
-.no-csstransitions .labelfloat-radio input.error:focus + label +label,
-.no-csstransitions .labelfloat-checkbox input.error:focus + label ,
-.no-csstransitions .labelfloat-checkbox input.error:focus + label  + label {
+.no-csstransitions .lf-checkbox label,
+.no-csstransitions .lf-checkbox label + label,
+.no-csstransitions .lf-radio label,
+.no-csstransitions .lf-radio label + label,
+.no-csstransitions .lf-radio input,
+.no-csstransitions .lf-checkbox input,
+.no-csstransitions .lf-radio input.error + label,
+.no-csstransitions .lf-radio input.error + label + label,
+.no-csstransitions .lf-checkbox input.error + label,
+.no-csstransitions .lf-checkbox input.error + label + label,
+.no-csstransitions .lf-radio input:focus + label,
+.no-csstransitions .lf-radio input:focus + label + label,
+.no-csstransitions .lf-checkbox input:focus + label,
+.no-csstransitions .lf-checkbox input:focus + label + label,
+.no-csstransitions .lf-radio input.error:focus + label,
+.no-csstransitions .lf-radio input.error:focus + label +label,
+.no-csstransitions .lf-checkbox input.error:focus + label ,
+.no-csstransitions .lf-checkbox input.error:focus + label  + label {
   background-color: transparent !important;
   border: none !important;
   color: #545454 !important;
 }
 
-.no-csstransitions .labelfloat-radio input.error + label,
-.no-csstransitions .labelfloat-radio input.error + label + label,
-.no-csstransitions .labelfloat-checkbox input.error + label,
-.no-csstransitions .labelfloat-checkbox input.error + label + label {
+.no-csstransitions .lf-radio input.error + label,
+.no-csstransitions .lf-radio input.error + label + label,
+.no-csstransitions .lf-checkbox input.error + label,
+.no-csstransitions .lf-checkbox input.error + label + label {
   border: none !important;
 }
 
 .no-csstransitions input.error,
 .no-csstransitions textarea.error {
-  padding: 0; 
-  
+  padding: 0;
+
   border-top: 2px solid #DA5757;
   border-right: 2px solid #DA5757;
   border-bottom: none !important;
@@ -539,7 +551,7 @@ select + label {
 .no-csstransitions input.error + label,
 .no-csstransitions input.error + label  + label{ /* errors */
   background: #DA5757 !important;
-  
+
   border-top: none;
   border-right: 2px solid #DA5757 !important;
   border-bottom: none !important;
@@ -551,26 +563,25 @@ select + label {
   border-right: 2px solid #366b7b !important;
   border-bottom: none !important;
   border-left: 2px solid #366b7b !important;
-} 
+}
 
 .no-csstransitions input.error:focus + label { /* active errors */
   background: #366b7b !important;
-  
+
   border-top: none;
   border-right: 2px solid #366b7b !important;
   border-bottom: none !important;
   border-left: 2px solid #366b7b !important;
-} 
+}
 
 .no-csstransitions input:focus + label,
 .no-csstransitions input:focus + label + label
 .no-csstransitions textarea:focus + label,
 .no-csstransitions textarea:focus + label + label {
   background: #366b7b !important;
-  
+
   border-top: none;
   border-right: 2px solid #366b7b;
   border-bottom: 2px solid #366b7b;
   border-left: 2px solid #366b7b;
 }
-

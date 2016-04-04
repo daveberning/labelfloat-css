@@ -47,17 +47,27 @@ Labels *must* come directly after the input or textarea. The text inside the <la
 
 **Note:** When using radio buttons, checkboxes, or select dropdowns
 ```html
-<div class="labelfloat-radio"><!-- required class and div wrap. Each radio button in its own div. -->
+<div class="lf-radio"><!-- required class and div wrap. Each radio button in its own div. -->
 	<input id="radio-id" name="radio-name" type="radio">
 	<label class="valid" for="radio-name">Radio Button 1</label>
 </div>
 
-<div class="labelfloat-checkbox"><!-- required class and div wrap. Each checkbox in its own div. -->
+<div class="lf-radio lf-radio-hollow"><!-- radio button with border, hollow center -->
+	<input id="radio-id" name="radio-name" type="radio">
+	<label class="valid" for="radio-name">Radio Button 1</label>
+</div>
+
+<div class="lf-checkbox"><!-- required class and div wrap. Each checkbox in its own div. -->
 	<input id="checkbox-id" name="checkbox-name" type="checkbox">
 	<label class="valid" for="checkbox-name">Checkbox 1</label>
 </div>
 
-<div class="labelfloat-select"><!-- required class and div wrap -->
+<div class="lf-checkbox lf-checkbox-check"><!-- checkbox with check -->
+	<input id="checkbox-id" name="checkbox-name" type="checkbox">
+	<label class="valid" for="checkbox-name">Checkbox 1</label>
+</div>
+
+<div class="lf-select"><!-- required class and div wrap -->
 	<select id="dropdown" name="dropdown">
 		<option>Option 1</option>
 		<option>Option 2</option>
@@ -140,6 +150,7 @@ Change the colors to the focus, inactive, and invalid focus states! Just find an
 Version 2 will come with refactored code and SASS support.
 
 #Change Log
+V1.1: Updated base labelfloat css classes from "labelfloat-" to "lf-". Also added an additional style of radio and checkboxes.
 V1: Uploaded LabelFloat.css and LabelFloat.js
 
 #Support

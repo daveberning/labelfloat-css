@@ -4,7 +4,7 @@
     "Dave Berning <daveberning@icloud.com>"
   ],
   "description": "Easily create forms with engaging animations and full validation.",
-  "main": "\"dist/LabelFloat.css\"",
+  "main": "dist/LabelFloat.css",
   "keywords": [
     "css",
     "labels",

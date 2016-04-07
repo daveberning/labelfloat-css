@@ -1,0 +1,27 @@
+{
+  name: 'LabelFloat.css',
+  authors: [
+    'Dave Berning <daveberning@icloud.com>'
+  ],
+  description: 'LabelFloat.css is a plugin developed and maintained by Dave Berning.',
+  main: 'dist/LabelFloat.css',
+  keywords: [
+    'CSS',
+    'plugin',
+    'form'
+    'validation',
+    'floating',
+    'labels',
+    'placeholders',
+    'animation'
+  ],
+  license: 'MIT',
+  homepage: 'http://labelfloat.daveberning.com/',
+  ignore: [
+    '**/.*',
+    'node_modules',
+    'bower_components',
+    'test',
+    'tests'
+  ]
+}

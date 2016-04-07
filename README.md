@@ -8,7 +8,7 @@ LabelFloat.css is compatible with Chrome, Firefox, Safari, Opera, Edge, and Inte
 ```html
 <link rel="stylesheet" href="css/LabelFloat.css">
 ```
-###1a. Insatll with Bower
+###1a. Install with Bower
 ```
 $ bower install labelfloat-css
 ```
@@ -92,7 +92,7 @@ LabelFloat.css is a CSS file that allows web developers and designers to create 
 ```html
 <link rel="stylesheet" href="css/LabelFloat.css">
 ```
-###2a. Insatll with Bower
+###2a. Install with Bower
 ```
 $ bower install labelfloat-css
 ```

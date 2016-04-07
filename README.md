@@ -4,9 +4,13 @@ LabelFloat.css is a plugin developed by Dave Berning. This plugin makes creating
 
 LabelFloat.css is compatible with Chrome, Firefox, Safari, Opera, Edge, and Internet Explorer 9 and up.
 
-##1. Link up LabelFloat.css stylesheet
+##1. Link up LabelFloat.css stylesheet or...
 ```html
 <link rel="stylesheet" href="css/LabelFloat.css">
+```
+###1a. Insatll with Bower
+```
+$ bower install labelfloat-css
 ```
 
 ##2. Link Latest jQuery Library, jQuery Validate, Modernizr and Selectivr CDN's
@@ -84,9 +88,13 @@ LabelFloat.css is a CSS file that allows web developers and designers to create 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 ```
 
-##2. Link Form Float Stylesheet
+##2. Link Form Float Stylesheet or...
 ```html
 <link rel="stylesheet" href="css/LabelFloat.css">
+```
+###2a. Insatll with Bower
+```
+$ bower install labelfloat-css
 ```
 ##3. Link Latest JQuery Library, jQuery Validate, Modernizr and Selectivr CDN's
 ```html

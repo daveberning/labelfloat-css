@@ -187,7 +187,17 @@
 &lt;/form&gt;</code></pre>
 				</div>
 
-				<p>Labels <em>must</em> come directly after the input or textarea. If you add a <pre><code><br></code></pre> after your input, this will <strong>not</strong> work. The text inside the <pre><code><label></pre></code> tags <em>must</em> be wrapped in <pre><code><span></pre></code> tags.</p>
+				<p>Labels <em>must</em> come directly after the input or textarea. If you add a "br" after your input, this will <strong>not</strong> work. The text inside the "label" tags <em>must</em> be wrapped in "span" tags.</p>
+
+				<h3>Using radio buttons, checkboxes, or select option dropdowns</h3>
+					<pre><code class="language-markup">
+						&lt;div class=&quot;lf-radio&quot;&gt;&lt;!-- required class and div wrap. Each radio button in its own div. --&gt;
+	&lt;input id=&quot;radio-id&quot; name=&quot;radio-name&quot; type=&quot;radio&quot;&gt;
+	&lt;label class=&quot;valid&quot; for=&quot;radio-name&quot;&gt;Radio Button 1&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;lf-radio lf-radio-hollow&quot;&gt;&lt;!-- radio button with border, hollow center --&gt;
+					</code></pre>
 
 			</div><!-- end container -->
 		</div><!-- end row -->

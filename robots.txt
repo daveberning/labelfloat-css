@@ -1,2 +1,0 @@
-Disallow: /thank-you.html
-Disallow: /send-email.php

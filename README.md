@@ -4,10 +4,10 @@ LabelFloat.css is a plugin developed by Dave Berning. This plugin makes creating
 
 LabelFloat.css is compatible with *Chrome, Firefox, Safari, Opera, Edge, and Internet Explorer 9 and up*.
 
-<<<<<<< HEAD
 #Dependancies
+
 When using LabelFloat.css, make sure you include it's dependancies. These can be referenced in the *<head>* or the at end before the closing *</body>* tag.
-=======
+
 ##1. Link up LabelFloat.css stylesheet or...
 ```html
 <link rel="stylesheet" href="css/LabelFloat.css">
@@ -190,6 +190,6 @@ Visit: http://labelfloat.daveberning.com
 <<<<<<< HEAD
 # License
 =======
-# License 
+# License
 >>>>>>> origin/master
 Code released under the [MIT license](https://github.com/daveberning/LabelFloat.css/blob/master/LICENSE.md).

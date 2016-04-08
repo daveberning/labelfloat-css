@@ -2,14 +2,10 @@
 
 LabelFloat.css is a plugin developed by Dave Berning. This plugin makes creating exciting animated forms quick and easy. It's based off of Chris Coyier's take on stylized floating labels; using labels as placeholders. Installation is simple and creating your webform is just as easy (as long as you follow the proper HTML structure). Let's get started!
 
-LabelFloat.css is compatible with Chrome, Firefox, Safari, Opera, Edge, and Internet Explorer 9 and up.
+LabelFloat.css is compatible with *Chrome, Firefox, Safari, Opera, Edge, and Internet Explorer 9 and up*.
 
-##1. Link up LabelFloat.css stylesheet
-```html
-<link rel="stylesheet" href="css/LabelFloat.css">
-```
-
-##2. Link Latest jQuery Library, jQuery Validate, Modernizr and Selectivr CDN's
+#Dependancies
+When using LabelFloat.css, make sure you include it's dependancies. These can be referenced in the *<head>* or the at end before the closing *</body>* tag.
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js"></script><!-- jQuery Validate CDN -->
@@ -17,13 +13,24 @@ LabelFloat.css is compatible with Chrome, Firefox, Safari, Opera, Edge, and Inte
 <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script><!-- Selectivir CDN -->
 ```
 
-###2a. Link up LabelFloat.js (optional)
-This is optional, but you can reference LabelFloat.js instead of using Modernizr and Selectivizr. If you want to limit load times and request this can be ideal.
+This is optional, but you can reference LabelFloat.js instead of using **Modernizr** and **Selectivizr**. If you want to limit load times and request this is ideal.
+
 ```html
 <script src="js/LabelFloat.js"></script>
 ```
 
-##3. Initialize jQuery Validate
+##Reference LabelFloat.css stylesheet
+```html
+<link rel="stylesheet" href="css/LabelFloat.css">
+```
+
+##Or, install with Bower
+```
+$ bower install labelfloat-css
+```
+
+
+##Initialize jQuery Validate
 ```html
 <script>
 	$("#form-ID").validate({
@@ -34,18 +41,18 @@ This is optional, but you can reference LabelFloat.js instead of using Modernizr
 </script>
 ```
 
-##4. Create Basic Form Structure
+##Structure your HTML form
 ```html
 <form>
-	<div><!-- required div to wrap input/label -->
+	<div><!-- required wrapping div -->
 		<input id="input-id" name="input-name" type="text">
 		<label class="valid" for="input-name"><span>First Name</span></label><!-- Required class="valid" and span tag -->
 	</div>
 </form>
 ```
-Labels *must* come directly after the input or textarea. The text inside the <label> tags must be wrapped in <span> tags.
+Labels *must* come directly after the input or textarea. If you add a <br> after your input, this will **not** work. The text inside the <label> tags *must* be wrapped in <span> tags.
 
-**Note:** When using radio buttons, checkboxes, or select dropdowns
+###Using radio buttons, checkboxes, or select option dropdowns
 ```html
 <div class="lf-radio"><!-- required class and div wrap. Each radio button in its own div. -->
 	<input id="radio-id" name="radio-name" type="radio">
@@ -75,43 +82,17 @@ Labels *must* come directly after the input or textarea. The text inside the <la
 </div>
 ```
 
-#Integrating with Twitter Bootstrap
-LabelFloat.css is a CSS file that allows web developers and designers to create visually appealing HTML forms easily with full validation. The installation is easy, just download LabelFloat.css, download and initialize jQuery Validate, and enjoy!
+#When using with Bootstrap
+LabelFloat.css is also compatible with Bootstrap and all it's form classes.
 
-##1. Link Bootstrap CDN
+##Reference Bootstrap if needed
 ```html
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 ```
 
-##2. Link Form Float Stylesheet
-```html
-<link rel="stylesheet" href="css/LabelFloat.css">
-```
-##3. Link Latest JQuery Library, jQuery Validate, Modernizr and Selectivr CDN's
-```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js"></script><!-- jQuery Validate CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script><!-- Modernizr CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script><!-- Selectivir CDN -->
-```
-
-###3a. Link up LabelFloat.js (optional)
-This is optional, but you can reference LabelFloat.js instead of using Modernizr and Selectivizr. If you want to limit load times and request this can be ideal.
-```html
-<script src="js/LabelFloat.js"></script>
-```
-##4. Initialize jQuery Validate
-```html
-<script>
-		$("#form-ID").validate({
-			errorPlacement: function(error, element) {
-		        error.appendTo(element.prev());
-		    }
-		});
-</script>
-```
-##4. Create Basic Form Structure*
+###Wrap Bootstrap Form with Wrapper Class
+The same basic HTML structure applies, just make sure you wrap your entire form with .bootstrap.
 ```html
 <div class="bootstrap"><!-- required class and form wrap -->
 	<form class="row">
@@ -147,12 +128,16 @@ This is optional, but you can reference LabelFloat.js instead of using Modernizr
 Change the colors to the focus, inactive, and invalid focus states! Just find and replace the above HEX codes with another or other color value.
 
 #Updates Planned
-Version 2 will come with refactored code and SASS support.
+Version 2 will come with refactored code and SASS support. Bower and other web packages are planning to be supported soon.
 
 #Change Log
+* **V1.1.1:** Bower support. Install away!
 * **V1.1:** Updated base label float css classes from "labelfloat-" to "lf-". Also added an additional style for radio buttons and checkboxes.
 * **V1:** Uploaded LabelFloat.css and LabelFloat.js
 
 #Support
 For support, please email: dave@daveberning.com
 Visit: http://labelfloat.daveberning.com
+
+# License
+Code released under the [MIT license](https://github.com/daveberning/LabelFloat.css/blob/master/LICENSE.md).

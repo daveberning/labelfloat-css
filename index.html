@@ -192,7 +192,7 @@
 				<h3>Using radio buttons, checkboxes, or select option dropdowns</h3>
 				<div class="col-lg-12 code-block">
 					<pre><code class="language-markup">
-						&lt;div class=&quot;lf-radio&quot;&gt;&lt;!-- required class and div wrap. Each radio button in its own div. --&gt;
+&lt;div class=&quot;lf-radio&quot;&gt;&lt;!-- required class and div wrap. Each radio button in its own div. --&gt;
 	&lt;input id=&quot;radio-id&quot; name=&quot;radio-name&quot; type=&quot;radio&quot;&gt;
 	&lt;label class=&quot;valid&quot; for=&quot;radio-name&quot;&gt;Radio Button 1&lt;/label&gt;
 &lt;/div&gt;
@@ -201,6 +201,50 @@
 					</code></pre>
 				</div>
 
+				<h3>When using with Bootstrap</h3>
+
+				<h4>Reference Bootstrap if needed</h4>
+				<p>The same basic HTML structure applies, just make sure you wrap your entire form with .bootstrap.</p>
+
+				<div class="col-lg-12 code-block">
+					<pre><code class="language-markup">
+&lt;div class=&quot;bootstrap&quot;&gt;&lt;!-- required class and form wrap --&gt;
+	&lt;form class=&quot;row&quot;&gt;
+
+		&lt;div class=&quot;col-lg-6&quot;&gt;
+			&lt;div class=&quot;form-group&quot;&gt;
+				&lt;input id=&quot;firstname&quot; class=&quot;form-control&quot; name=&quot;firstname&quot; type=&quot;text&quot;&gt;
+				&lt;label class=&quot;valid&quot; for=&quot;firstname&quot;&gt;&lt;span&gt;First Name&lt;/span&gt;&lt;/label&gt;
+			&lt;/div&gt;&lt;!-- end form-group --&gt;
+		&lt;/div&gt;&lt;!-- end col --&gt;
+
+	&lt;/form&gt;
+&lt;/div&gt;&lt;!-- end bootstrap --&gt;
+					</code></pre>
+				</div>
+
+				<p><em>Structure your Bootstrap form anyway you like. Any column size, any number of <div>'s etc.</em></p>
+
+				<h3>Customizations</h3>
+				<div class="col-lg-12 code-block">
+					<pre><code class="language-css">
+/* COLOR CODES: FIND AND REPLACE
+	----------------------------------------
+	    VALID FOCUS STATE: #366b7b; (demo: blue)
+	    VALID NOT FOCUS STATE: #ccc; (demo: grey)
+	    INVALID FOCUS STATE: #DA5757; (demo: red)
+
+	    SUBMIT BUTTON: #747474;
+	    SUBMIT BUTTOB HOVER: #464646;
+
+	    *NOTE: Any color you find and replace
+	    will also replace the border color
+	    for its respected states;
+	--------------------------------------*/
+					</code></pre>
+				</div>
+
+				<p>Change the colors to the focus, inactive, and invalid focus states! Just find and replace the above HEX codes with another or other color value.<p>
 			</div><!-- end container -->
 		</div><!-- end row -->
 

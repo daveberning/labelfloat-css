@@ -8,17 +8,6 @@ LabelFloat.css is compatible with *Chrome, Firefox, Safari, Opera, Edge, and Int
 
 When using LabelFloat.css, make sure you include it's dependancies. These can be referenced in the *<head>* or the at end before the closing *</body>* tag.
 
-##1. Link up LabelFloat.css stylesheet or...
-```html
-<link rel="stylesheet" href="css/LabelFloat.css">
-```
-###1a. Install with Bower
-```
-$ bower install labelfloat-css
-```
-
-##2. Link Latest jQuery Library, jQuery Validate, Modernizr and Selectivr CDN's
->>>>>>> origin/master
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js"></script><!-- jQuery Validate CDN -->
@@ -104,43 +93,8 @@ LabelFloat.css is also compatible with Bootstrap and all it's form classes.
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 ```
 
-<<<<<<< HEAD
 ###Wrap Bootstrap Form with Wrapper Class
 The same basic HTML structure applies, just make sure you wrap your entire form with .bootstrap.
-=======
-##2. Link Form Float Stylesheet or...
-```html
-<link rel="stylesheet" href="css/LabelFloat.css">
-```
-###2a. Install with Bower
-```
-$ bower install labelfloat-css
-```
-##3. Link Latest JQuery Library, jQuery Validate, Modernizr and Selectivr CDN's
-```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js"></script><!-- jQuery Validate CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script><!-- Modernizr CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script><!-- Selectivir CDN -->
-```
-
-###3a. Link up LabelFloat.js (optional)
-This is optional, but you can reference LabelFloat.js instead of using Modernizr and Selectivizr. If you want to limit load times and request this can be ideal.
-```html
-<script src="js/LabelFloat.js"></script>
-```
-##4. Initialize jQuery Validate
-```html
-<script>
-		$("#form-ID").validate({
-			errorPlacement: function(error, element) {
-		        error.appendTo(element.prev());
-		    }
-		});
-</script>
-```
-##4. Create Basic Form Structure*
->>>>>>> origin/master
 ```html
 <div class="bootstrap"><!-- required class and form wrap -->
 	<form class="row">
@@ -187,9 +141,5 @@ Version 2 will come with refactored code and SASS support. Bower and other web p
 For support, please email: dave@daveberning.com
 Visit: http://labelfloat.daveberning.com
 
-<<<<<<< HEAD
 # License
-=======
-# License
->>>>>>> origin/master
 Code released under the [MIT license](https://github.com/daveberning/LabelFloat.css/blob/master/LICENSE.md).

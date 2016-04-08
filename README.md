@@ -26,7 +26,7 @@ This is optional, but you can reference LabelFloat.js instead of using **Moderni
 <link rel="stylesheet" href="css/LabelFloat.css">
 ```
 
-##Or, install with Bower
+##Install with Bower
 ```
 $ bower install labelfloat-css
 ```

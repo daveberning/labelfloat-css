@@ -137,11 +137,18 @@
 
 				<p>LabelFloat.css is a plugin developed by Dave Berning. This plugin makes creating exciting animated forms quick and easy. It's based off of Chris Coyier's <a href="https://css-tricks.com/float-labels-css/" target="_blank">take on stylized floating labels</a>; using labels as placeholders. Installation is simple and creating your webform is just as easy (as long as you follow the proper HTML structure). Let's get started!</p>
 
-				<p>LabelFloat.css is compatible with Chrome, Firefox, Safari, Opera, Edge, and Internet Explorer 9 and up.
+				<p>LabelFloat.css is compatible with <em>Chrome, Firefox, Safari, Opera, Edge, and Internet Explorer 9 and up</em>.</p>
+
+				<h3>Dependancies</h3>
 
 				<div class="col-lg-12 code-block">
-					<p><strong>1. Link Form Float Stylesheet</strong></p>
-					<pre><code class="language-markup">&lt;link rel="stylesheet" href="css/LabelFloat.css"&gt;</code></pre>
+					<p>When using LabelFloat.css, make sure you include it's dependancies. These can be referenced in the or the at end before the closing tag.</p>
+
+					<pre><code class="language-markup">&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js&quot;&gt;&lt;/script&gt; &lt;script src=&quot;http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js&quot;&gt;&lt;/script&gt;&lt;!-- jQuery Validate CDN --&gt; &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js&quot;&gt;&lt;/script&gt;&lt;!-- Modernizr CDN --&gt; &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js&quot;&gt;&lt;/script&gt;&lt;!-- Selectivir CDN --&gt;</code></pre>
+
+					<p>This is optional, but you can reference LabelFloat.js instead of using Modernizr and Selectivizr. If you want to limit load times and request this is ideal.</p>
+
+					<pre><code class="language-markup">&lt;script src=&quot;js/LabelFloat.js&quot;&gt;&lt;/script&gt;</code></pre>
 				</div>
 
 				<div class="col-lg-12 code-block">

@@ -167,11 +167,14 @@
 
 				<h3>Initialize jQuery Validate</h3>
 				<div class="col-lg-12 code-block">
-					<pre><code class="language-js">$("#form-ID").validate({
-						errorPlacement: function(error, element) {
-							error.appendTo(element.prev());
-						}
-					});</code></pre>
+					<pre><code class="language-markup">&lt;script&gt;<br>
+$("#form-ID").validate({
+	errorPlacement: function(error, element) {
+		error.appendTo(element.prev());
+	}
+});<br>
+&lt;/script&gt;
+</code></pre>
 				</div>
 
 			</div><!-- end container -->

@@ -168,14 +168,24 @@
 				<h3>Initialize jQuery Validate</h3>
 				<div class="col-lg-12 code-block">
 					<pre><code class="language-markup">&lt;script&gt;<br>
-$("#form-ID").validate({
-	errorPlacement: function(error, element) {
-		error.appendTo(element.prev());
-	}
-});<br>
+	$("#form-ID").validate({
+		errorPlacement: function(error, element) {
+			error.appendTo(element.prev());
+		}
+	});<br>
 &lt;/script&gt;
 </code></pre>
 				</div>
+
+				<h3>Structure your HTML form</h3>
+				<pre><code class="language-markup">&lt;form&gt;<br />
+&lt;div&gt;&lt;!-- required div to wrap input/label --&gt;<br />
+	&lt;input id="input-id" name="input-name" type="text"&gt;<br />
+	&lt;label class="valid" for="input-name"&gt;&lt;span&gt;First Name&lt;/span&gt;&lt;/label&gt;&lt;!-- Required class="valid" and span tag --&gt;<br />
+&lt;/div&gt; <br />
+&lt;/form&gt;</code></pre>
+
+				<p>Labels <em>must</em> come directly after the input or textarea. If you add a <code><br></code> after your input, this will <strong>not</strong> work. The text inside the <code><label></code> tags <em>must</em> be wrapped in <code><span></code> tags.</p>
 
 			</div><!-- end container -->
 		</div><!-- end row -->

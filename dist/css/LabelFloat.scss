@@ -445,6 +445,19 @@ select + label {
   text-transform: inherit !important;
 }
 
+/* additional radio and checkboxes */
+.lf-radio.radio-hollow input:checked + label::before {
+    background: white;
+    border: 6px solid #366b7b;
+}
+
+.lf-checkbox.checkbox-check input:checked + label::before {
+    font-family: 'Glyphicons Halflings';
+    content:"\e013";
+    color: white;
+    padding: 0 0 0px 3px;
+}
+
 .no-csstransitions {
     // IE FIXES
     // -------------------------------------

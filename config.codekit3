@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "25813",
 "files": {
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
 	"\/bower.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -16,12 +22,6 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
-		},
-	"\/demo\/css\/.sass-cache\/a212a097fa37672c23fbee495afba5840f8e69cd\/LabelFloat.scssc": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/demo\/css\/.sass-cache\/a212a097fa37672c23fbee495afba5840f8e69cd\/LabelFloat.scssc",
-		"oF": 0
 		},
 	"\/demo\/css\/LabelFloat.css": {
 		"aP": 1,
@@ -77,26 +77,27 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/dist\/LabelFloat.css": {
+	"\/dist\/css\/LabelFloat.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/dist\/LabelFloat-min.css",
+		"oAP": "\/dist\/css\/LabelFloat-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/dist\/LabelFloat.js": {
-		"ft": 64,
-		"mi": 1,
+	"\/dist\/css\/LabelFloat.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
 		"oA": 0,
-		"oAP": "\/dist\/LabelFloat-min.js",
+		"oAP": "\/dist\/css\/LabelFloat.min-min.css",
 		"oF": 0,
-		"sC": 1,
-		"tS": 0
+		"oS": 0
 		},
-	"\/dist\/LabelFloat.scss": {
+	"\/dist\/css\/LabelFloat.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -104,10 +105,19 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/dist\/LabelFloat.css",
+		"oAP": "\/dist\/css\/LabelFloat.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/dist\/js\/LabelFloat.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/js\/LabelFloat-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/LICENSE.md": {
 		"cS": 0,

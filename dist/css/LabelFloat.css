@@ -1,38 +1,24 @@
-/* Copyright 2015. All Rights Reserved
-   Developed by Dave Berning for Upright Communications
-   Interactive form label floats that work with jQuery validate
+/*
+   LabelFloat.css v.2.0.0
+   Copyright 2017. All Rights Reserved. Parsec Digital Media, LLC.
+   Developed by Dave Berning, Owner of Parsec Digital.
+   Interactive form label floats that work with jQuery validate.
 */
-
-/* COLOR CODES: FIND AND REPLACE
-----------------------------------------
-    VALID FOCUS STATE: #366b7b; (demo: blue)
-    VALID NOT FOCUS STATE: #545454; (demo: dark grey)
-    INVALID FOCUS STATE: #DA5757; (demo: red)
-
-    SUBMIT BUTTON: #747474;
-    SUBMIT BUTTOB HOVER: #464646;
-
-    *NOTE: Any color you find and replace
-    will also replace the border color
-    for its respected states;
---------------------------------------*/
 * {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-form >  div {
+form > div {
   position: relative;
   margin-bottom: 1rem;
 }
-
-input,
-input:valid,
-textarea,
-textarea:valid {
+form input,
+form input:valid,
+form textarea,
+form textarea:valid {
   width: 100%;
-  border: 2px solid #545454; /* COLOR CHANGE: default field border */
+  border: 2px solid #545454;
+  /* COLOR CHANGE: default field border */
   background-color: transparent !important;
   position: relative;
   top: 0;
@@ -42,58 +28,54 @@ textarea:valid {
   padding: 3px 3px 20px 3px !important;
   color: #545454;
 }
-
-label,
-input:focus label span,
-input:active label span {
+form label,
+form input:focus label span,
+form input:active label span {
   padding: 5px !important;
   background-color: transparent;
 }
-
-label.error,
-input.error + label span,
-input.error + label span + label span,
-input.error:active + label span + label span,
-input.error:focus + label span,
-input.error:active + label span,
-input.error:focus + label span + label span,
-input.error:active + label span + label span,
-
-textarea.error + label span,
-textarea.error + label span + label span,
-
-textarea.error:focus + label span,
-textarea.error:active + label span,
-textarea.error:focus + label span + label span,
-textarea.error:active + label span + label span { /* Errors */
+form label.error,
+form input.error + label span,
+form input.error + label span + label span,
+form input.error:active + label span + label span,
+form input.error:focus + label span,
+form input.error:active + label span,
+form input.error:focus + label span + label span,
+form input.error:active + label span + label span,
+form textarea.error + label span,
+form textarea.error + label span + label span,
+form textarea.error:focus + label span,
+form textarea.error:active + label span,
+form textarea.error:focus + label span + label span,
+form textarea.error:active + label span + label span {
+  /* Errors */
   background: #DA5757 !important;
   color: white !important;
   width: 100%;
   padding: 1px 3px;
   display: block;
 }
-
-input.error,
-input.error:focus,
-input.error:active,
-textarea.error,
-textarea.error:focus,
-textarea.error:active,
-select.error,
-select.error:focus,
-select.error:active {
-  border: 2px solid #DA5757 !important; /* Red border on errors */
+form input.error,
+form input.error:focus,
+form input.error:active,
+form textarea.error,
+form textarea.error:focus,
+form textarea.error:active,
+form select.error,
+form select.error:focus,
+form select.error:active {
+  border: 2px solid #DA5757 !important;
+  /* Red border on errors */
 }
-
-input.error + label,
-input.error + label + label,
-textarea.error,
-textarea.error + label,
-textarea.error + label + label {
+form input.error + label,
+form input.error + label + label,
+form textarea.error,
+form textarea.error + label,
+form textarea.error + label + label {
   text-transform: uppercase;
 }
-
-label {
+form label {
+  -webkit-transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
   transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
   position: absolute;
   color: #545454 !important;
@@ -106,37 +88,33 @@ label {
   z-index: 1;
   background-color: transparent !important;
 }
-
-input:focus + label span {
+form input:focus + label span {
   font-size: 10px;
   padding: 0;
 }
-
-.form-group {
-  padding:0;
+form .form-group {
+  padding: 0;
   margin-bottom: 0;
 }
-
-input:focus,
-input:active,
-textarea:focus,
-textarea:active,
-select:focus {
+form input:focus,
+form input:active,
+form textarea:focus,
+form textarea:active,
+form select:focus {
   padding: 4px 6px 20px 6px;
-  border-color: #366b7b !important; /* Border color of focused/active field */
+  border-color: #366b7b !important;
+  /* Border color of focused/active field */
 }
-
-/* DEFAULT LABEL SIZE
---------------------------------------------------------*/
-label.error,
-input:focus + label span,
-input:focus:not(:required) + label span,
-input:valid + label span + label span,
-input:focus + label span + label span,
-textarea:focus + label span,
-textarea:focus + label span + label span,
-textarea:valid + label span + label span {
-  background: #366b7b !important; /* Transformed label */
+form label.error,
+form input:focus + label span,
+form input:focus:not(:required) + label span,
+form input:valid + label span + label span,
+form input:focus + label span + label span,
+form textarea:focus + label span,
+form textarea:focus + label span + label span,
+form textarea:valid + label span + label span {
+  background: #366b7b !important;
+  /* Transformed label */
   color: white !important;
   font-size: 10px;
   padding: 1px 3px;
@@ -144,66 +122,63 @@ textarea:valid + label span + label span {
   text-transform: uppercase;
   display: block;
 }
-
-
-/* LABEL WHEN FOCUSED/ACTIVE/VALID (transformed)
---------------------------------------------------------*/
-label.error,
-input:active label,
-input:active:not(:focus) + label,
-input.error + label,
-input.error:focus + label,
-input.error:active + label,
-input.error + label + label,
-input.error:focus + label + label,
-input.error:active + label + label,
-textarea.error + label,
-textarea.error:focus + label,
-textarea.error:active + label,
-textarea.error + label + label,
-textarea.error:focus + label + label,
-textarea.error:active + label + label,
-input:focus + label,
-input:focus + label + label,
-input.valid:valid:not(:focus) + label,
-input.valid:valid:not(:focus) + label + label.valid,
-textarea:focus + label,
-textarea:focus + label + label,
-textarea:active:not(:focus) + label,
-textarea.valid:valid:not(:focus) + label,
-textarea.valid:valid:not(:focus) + label + label.valid,
-textarea:focus + label + label,
-textarea.valid:valid:not(:focus) + label,
-textarea.valid:valid:not(:focus) + label + label.valid  { /* This is what makes the label transform (don't tweak unless you know what you're doing) */
+form label.error,
+form input:active label,
+form input:active:not(:focus) + label,
+form input.error + label,
+form input.error:focus + label,
+form input.error:active + label,
+form input.error + label + label,
+form input.error:focus + label + label,
+form input.error:active + label + label,
+form textarea.error + label,
+form textarea.error:focus + label,
+form textarea.error:active + label,
+form textarea.error + label + label,
+form textarea.error:focus + label + label,
+form textarea.error:active + label + label,
+form input:focus + label,
+form input:focus + label + label,
+form input.valid:valid:not(:focus) + label,
+form input.valid:valid:not(:focus) + label + label.valid,
+form textarea:focus + label,
+form textarea:focus + label + label,
+form textarea:active:not(:focus) + label,
+form textarea.valid:valid:not(:focus) + label,
+form textarea.valid:valid:not(:focus) + label + label.valid,
+form textarea:focus + label + label,
+form textarea.valid:valid:not(:focus) + label,
+form textarea.valid:valid:not(:focus) + label + label.valid {
+  /* This is what makes the label transform (don't tweak unless you know what you're doing) */
   top: 100% !important;
   padding: 3px 2px !important;
   margin-top: -18px;
   font-size: 10px !important;
   z-index: 12;
 }
-
-textarea.error:focus + label,
-textarea.error:active + label,
-textarea.error + label + label,
-textarea.error:focus + label + label,
-textarea.error:active + label + label,
-textarea:focus + label,
-textarea:focus + label + label,
-textarea:active:not(:focus) + label,
-textarea.valid:valid:not(:focus) + label,
-textarea.valid:valid:not(:focus) + label + label.valid,
-textarea:focus + label + label,
-textarea.valid:valid:not(:focus) + label,
-textarea.valid:valid:not(:focus) + label + label.valid { /* textarea border fix */
+form textarea.error:focus + label,
+form textarea.error:active + label,
+form textarea.error + label + label,
+form textarea.error:focus + label + label,
+form textarea.error:active + label + label,
+form textarea:focus + label,
+form textarea:focus + label + label,
+form textarea:active:not(:focus) + label,
+form textarea.valid:valid:not(:focus) + label,
+form textarea.valid:valid:not(:focus) + label + label.valid,
+form textarea:focus + label + label,
+form textarea.valid:valid:not(:focus) + label,
+form textarea.valid:valid:not(:focus) + label + label.valid {
+  /* textarea border fix */
   padding: 0 !important;
 }
-
-input.valid:valid:not(:focus) + label span,
-input.valid:valid:not(:focus) + label span + label, span
+form input.valid:valid:not(:focus) + label span,
+form input.valid:valid:not(:focus) + label span + label, form span
 textarea.valid:valid:not(:focus) + label span,
-textarea.valid:valid:not(:focus) + label span + label span,
-input.valid:not(:required) + label span,
-textarea.valid:valid:not(:focus) + label span { /* If the field is valid and not focused or active */
+form textarea.valid:valid:not(:focus) + label span + label span,
+form input.valid:not(:required) + label span,
+form textarea.valid:valid:not(:focus) + label span {
+  /* If the field is valid and not focused or active */
   background: #545454;
   text-transform: uppercase;
   color: white;
@@ -212,11 +187,7 @@ textarea.valid:valid:not(:focus) + label span { /* If the field is valid and not
   width: 100%;
   padding: 1px 3px;
 }
-
-
-/* SUBMIT BUTTON
-------------------------------------------------------*/
-input[type="submit"] {
+form input[type="submit"] {
   color: white;
   font-family: 'Oswald', sans-serif;
   background: #747474 !important;
@@ -226,32 +197,25 @@ input[type="submit"] {
   margin: 0 0 5% 0;
   width: 150px;
 }
-
-input[type="submit"]:hover {
-  background: #464646 !important;
+form input[type="submit"]:hover {
+  background: #868686;
 }
 
-/* BOOTSTRAP RESETS
--------------------------------------------------------------*/
 .bootstrap label span {
   border-bottom-left-radius: 4px  !important;
   border-bottom-right-radius: 4px !important;
 }
-
 .bootstrap label:focus {
   padding-left: 15px;
   padding-right: 15px;
 }
-
 .bootstrap textarea {
   width: 100% !important;
 }
-
 .bootstrap .form-control {
   height: auto;
   border: 2px solid #545454;
 }
-
 .bootstrap label.error,
 .bootstrap input:focus + label span,
 .bootstrap input:focus:not(:required) + label span,
@@ -260,7 +224,8 @@ input[type="submit"]:hover {
 .bootstrap textarea:focus + label span,
 .bootstrap textarea:focus + label span + label span,
 .bootstrap textarea:valid + label span + label span {
-  background: #366b7b; /* Transformed label */
+  background: #366b7b;
+  /* Transformed label */
   color: white !important;
   font-size: 10px;
   padding: 1px 3px;
@@ -269,12 +234,10 @@ input[type="submit"]:hover {
   text-transform: uppercase;
   display: block;
 }
-
 .bootstrap label.error + label span,
 .bootstrap label.error + label span + label span {
   background: #DA5757 !important;
 }
-
 .bootstrap label.error,
 .bootstrap input:active label,
 .bootstrap input:active:not(:focus) + label,
@@ -301,20 +264,21 @@ input[type="submit"]:hover {
 .bootstrap textarea.valid:valid:not(:focus) + label + label.valid,
 .bootstrap textarea:focus + label + label,
 .bootstrap textarea.valid:valid:not(:focus) + label,
-.bootstrap textarea.valid:valid:not(:focus) + label + label.valid  { /* This is what makes the label transform (don't tweak unless you know what you're doing) */
+.bootstrap textarea.valid:valid:not(:focus) + label + label.valid {
+  /* This is what makes the label transform (don't tweak unless you know what you're doing) */
   top: 100% !important;
   padding: 0 15px !important;
   margin-top: -18px;
   font-size: 10px !important;
   z-index: 12;
 }
-
 .bootstrap input.valid:valid:not(:focus) + label span,
-.bootstrap input.valid:valid:not(:focus) + label span + label, span
-.bootstrap textarea.valid:valid:not(:focus) + label span,
+.bootstrap input.valid:valid:not(:focus) + label span + label, .bootstrap span
+textarea.valid:valid:not(:focus) + label span,
 .bootstrap textarea.valid:valid:not(:focus) + label span + label span,
 .bootstrap input.valid:not(:required) + label span,
-.bootstrap textarea.valid:valid:not(:focus) + label span { /* If the field is valid and not focused or active */
+.bootstrap textarea.valid:valid:not(:focus) + label span {
+  /* If the field is valid and not focused or active */
   background: #545454;
   text-transform: uppercase;
   color: white;
@@ -324,7 +288,6 @@ input[type="submit"]:hover {
   margin: 0 !important;
   padding: 1px 3px;
 }
-
 .bootstrap label,
 .bootstrap input:focus label span,
 .bootstrap input:active label span {
@@ -332,21 +295,15 @@ input[type="submit"]:hover {
   background-color: transparent;
 }
 
-/* RADIO, CHECK, SELECT RESETS
-------------------------------------------------------*/
 input[type="radio"] + label,
 input[type="checkbox"] + label
 select + label {
-  background: none ! important;
-  transition : none;
+  background: none !important;
+  -webkit-transition: none;
+  transition: none;
   position: relative;
   padding: 0 !important;
 }
-
-/* .lf-select {
-  border: 2px solid #545454;
-  padding: 5px 2px;
-} */
 
 .lf-select select {
   background: transparent;
@@ -371,39 +328,31 @@ select + label {
 .lf-radio input,
 .lf-checkbox input {
   opacity: 0;
-  z-index: 100;
+  z-index: 100 !important;
   margin: 0 !important;
   font-size: inherit !important;
   position: absolute !important;
   height: 100%;
 }
 
-
 .lf-radio input + label,
 .lf-checkbox input + label,
-
 .lf-radio input:checked + label,
 .lf-checkbox input:checked + label,
-
 .lf-radio input:focus + label,
 .lf-checkbox input:focus + label,
-
 .lf-radio input.error + label,
 .lf-checkbox input.error + label,
-
 .lf-radio input.error:checked + label,
 .lf-checkbox input.error:checked + label,
-
 .lf-radio input.error:focus + label,
 .lf-checkbox input.error:focus + label,
-
 .lf-radio input.valid:valid:not(:focus) + label,
 .lf-checkbox input.valid:valid:not(:focus) + label {
   margin: 0 !important;
   font-size: inherit !important;
   padding: 0 !important;
 }
-
 
 .lf-radio input,
 .lf-radio label,
@@ -415,7 +364,6 @@ select + label {
   position: absolute;
 }
 
-
 .lf-radio label,
 .lf-checkbox label {
   position: relative;
@@ -423,7 +371,6 @@ select + label {
 
 .lf-radio input + label::before,
 .lf-checkbox input + label::before,
-
 .lf-radio input.error + label + label::before,
 .lf-checkbox input.error + label::before {
   content: '';
@@ -446,59 +393,51 @@ select + label {
   background: #366b7b;
 }
 
-.lf-radio input.error  + label::before,
+.lf-radio input.error + label::before,
 .lf-checkbox input.error + label::before {
   background: #DA5757;
 }
 
-.lf-radio input.error  + label,
-.lf-checkbox input.error  + label {
+.lf-radio input.error + label,
+.lf-checkbox input.error + label {
   text-transform: inherit !important;
 }
 
 /* additional radio and checkboxes */
-.lf-radio.lf-radio-hollow input:checked + label::before {
-    background: white;
-    border: 6px solid #366b7b;
+.lf-radio.radio-hollow input:checked + label::before {
+  background: white;
+  border: 6px solid #366b7b;
 }
 
-.lf-checkbox.lf-checkbox-check input:checked + label::before {
-    font-family: 'Glyphicons Halflings';
-    content:"\e013";
-    color: white;
-    padding: 0 0 0px 3px;
+.lf-checkbox.checkbox-check input:checked + label::before {
+  font-family: 'Glyphicons Halflings';
+  content: "\e013";
+  color: white;
+  padding: 0 0 0px 3px;
 }
 
-
-/* IE FIXES
--------------------------------------*/
 .no-csstransitions input,
 .no-csstransitions textarea {
   width: 100%;
   padding: 5px !important;
-
   border-top: 2px solid #545454;
   border-right: 2px solid #545454;
   border-bottom: none;
   border-left: 2px solid #545454;
 }
-
 .no-csstransitions label {
   position: relative !important;
   background-color: #545454 !important;
   padding: 4px !important;
   font-size: 10px;
-
   border-top: none;
   border-right: 2px solid #545454;
   border-bottom: 2px solid #545454;
   border-left: 2px solid #545454;
 }
-
 .no-csstransitions label {
   color: white !important;
 }
-
 .no-csstransitions .lf-checkbox label,
 .no-csstransitions .lf-checkbox label + label,
 .no-csstransitions .lf-radio label,
@@ -514,31 +453,27 @@ select + label {
 .no-csstransitions .lf-checkbox input:focus + label,
 .no-csstransitions .lf-checkbox input:focus + label + label,
 .no-csstransitions .lf-radio input.error:focus + label,
-.no-csstransitions .lf-radio input.error:focus + label +label,
-.no-csstransitions .lf-checkbox input.error:focus + label ,
-.no-csstransitions .lf-checkbox input.error:focus + label  + label {
+.no-csstransitions .lf-radio input.error:focus + label + label,
+.no-csstransitions .lf-checkbox input.error:focus + label,
+.no-csstransitions .lf-checkbox input.error:focus + label + label {
   background-color: transparent !important;
   border: none !important;
   color: #545454 !important;
 }
-
 .no-csstransitions .lf-radio input.error + label,
 .no-csstransitions .lf-radio input.error + label + label,
 .no-csstransitions .lf-checkbox input.error + label,
 .no-csstransitions .lf-checkbox input.error + label + label {
   border: none !important;
 }
-
 .no-csstransitions input.error,
 .no-csstransitions textarea.error {
   padding: 0;
-
   border-top: 2px solid #DA5757;
   border-right: 2px solid #DA5757;
   border-bottom: none !important;
   border-left: 2px solid #DA5757;
 }
-
 .no-csstransitions input.error + label span,
 .no-csstransitions input.error + label span + label span,
 .no-csstransitions textarea.error + label span,
@@ -547,39 +482,35 @@ select + label {
   font-size: 9px;
   padding: 1px;
 }
-
 .no-csstransitions input.error + label,
-.no-csstransitions input.error + label  + label{ /* errors */
+.no-csstransitions input.error + label + label {
+  /* errors */
   background: #DA5757 !important;
-
   border-top: none;
   border-right: 2px solid #DA5757 !important;
   border-bottom: none !important;
   border-left: 2px solid #DA5757 !important;
 }
-
-.no-csstransitions input.error:focus { /* active errors */
+.no-csstransitions input.error:focus {
+  /* active errors */
   border-top: 2px solid #366b7b !important;
   border-right: 2px solid #366b7b !important;
   border-bottom: none !important;
   border-left: 2px solid #366b7b !important;
 }
-
-.no-csstransitions input.error:focus + label { /* active errors */
+.no-csstransitions input.error:focus + label {
+  /* active errors */
   background: #366b7b !important;
-
   border-top: none;
   border-right: 2px solid #366b7b !important;
   border-bottom: none !important;
   border-left: 2px solid #366b7b !important;
 }
-
 .no-csstransitions input:focus + label,
 .no-csstransitions input:focus + label + label
-.no-csstransitions textarea:focus + label,
+textarea:focus + label,
 .no-csstransitions textarea:focus + label + label {
   background: #366b7b !important;
-
   border-top: none;
   border-right: 2px solid #366b7b;
   border-bottom: 2px solid #366b7b;

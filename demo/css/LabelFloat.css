@@ -5,12 +5,13 @@
    Interactive form label floats that work with jQuery validate.
 */
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 form > div {
   position: relative;
-  margin-bottom: 1rem; }
-
+  margin-bottom: 1rem;
+}
 form input,
 form input:valid,
 form textarea,
@@ -25,14 +26,14 @@ form textarea:valid {
   z-index: 10;
   outline: 0;
   padding: 3px 3px 20px 3px !important;
-  color: #545454; }
-
+  color: #545454;
+}
 form label,
 form input:focus label span,
 form input:active label span {
   padding: 5px !important;
-  background-color: transparent; }
-
+  background-color: transparent;
+}
 form label.error,
 form input.error + label span,
 form input.error + label span + label span,
@@ -52,8 +53,8 @@ form textarea.error:active + label span + label span {
   color: white !important;
   width: 100%;
   padding: 1px 3px;
-  display: block; }
-
+  display: block;
+}
 form input.error,
 form input.error:focus,
 form input.error:active,
@@ -64,15 +65,15 @@ form select.error,
 form select.error:focus,
 form select.error:active {
   border: 2px solid #DA5757 !important;
-  /* Red border on errors */ }
-
+  /* Red border on errors */
+}
 form input.error + label,
 form input.error + label + label,
 form textarea.error,
 form textarea.error + label,
 form textarea.error + label + label {
-  text-transform: uppercase; }
-
+  text-transform: uppercase;
+}
 form label {
   -webkit-transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
   transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
@@ -85,16 +86,16 @@ form label {
   left: 0;
   width: 100%;
   z-index: 1;
-  background-color: transparent !important; }
-
+  background-color: transparent !important;
+}
 form input:focus + label span {
   font-size: 10px;
-  padding: 0; }
-
+  padding: 0;
+}
 form .form-group {
   padding: 0;
-  margin-bottom: 0; }
-
+  margin-bottom: 0;
+}
 form input:focus,
 form input:active,
 form textarea:focus,
@@ -102,8 +103,8 @@ form textarea:active,
 form select:focus {
   padding: 4px 6px 20px 6px;
   border-color: #366b7b !important;
-  /* Border color of focused/active field */ }
-
+  /* Border color of focused/active field */
+}
 form label.error,
 form input:focus + label span,
 form input:focus:not(:required) + label span,
@@ -119,8 +120,8 @@ form textarea:valid + label span + label span {
   padding: 1px 3px;
   z-index: 1;
   text-transform: uppercase;
-  display: block; }
-
+  display: block;
+}
 form label.error,
 form input:active label,
 form input:active:not(:focus) + label,
@@ -153,8 +154,8 @@ form textarea.valid:valid:not(:focus) + label + label.valid {
   padding: 3px 2px !important;
   margin-top: -18px;
   font-size: 10px !important;
-  z-index: 12; }
-
+  z-index: 12;
+}
 form textarea.error:focus + label,
 form textarea.error:active + label,
 form textarea.error + label + label,
@@ -169,8 +170,8 @@ form textarea:focus + label + label,
 form textarea.valid:valid:not(:focus) + label,
 form textarea.valid:valid:not(:focus) + label + label.valid {
   /* textarea border fix */
-  padding: 0 !important; }
-
+  padding: 0 !important;
+}
 form input.valid:valid:not(:focus) + label span,
 form input.valid:valid:not(:focus) + label span + label, form span
 textarea.valid:valid:not(:focus) + label span,
@@ -184,8 +185,8 @@ form textarea.valid:valid:not(:focus) + label span {
   z-index: 10;
   display: block;
   width: 100%;
-  padding: 1px 3px; }
-
+  padding: 1px 3px;
+}
 form input[type="submit"] {
   color: white;
   font-family: 'Oswald', sans-serif;
@@ -194,25 +195,27 @@ form input[type="submit"] {
   padding: 15px !important;
   border: none !important;
   margin: 0 0 5% 0;
-  width: 150px; }
-  form input[type="submit"]:hover {
-    background: #868686; }
+  width: 150px;
+}
+form input[type="submit"]:hover {
+  background: #868686;
+}
 
 .bootstrap label span {
   border-bottom-left-radius: 4px  !important;
-  border-bottom-right-radius: 4px !important; }
-
+  border-bottom-right-radius: 4px !important;
+}
 .bootstrap label:focus {
   padding-left: 15px;
-  padding-right: 15px; }
-
+  padding-right: 15px;
+}
 .bootstrap textarea {
-  width: 100% !important; }
-
+  width: 100% !important;
+}
 .bootstrap .form-control {
   height: auto;
-  border: 2px solid #545454; }
-
+  border: 2px solid #545454;
+}
 .bootstrap label.error,
 .bootstrap input:focus + label span,
 .bootstrap input:focus:not(:required) + label span,
@@ -229,12 +232,12 @@ form input[type="submit"] {
   margin: 0 !important;
   z-index: 1;
   text-transform: uppercase;
-  display: block; }
-
+  display: block;
+}
 .bootstrap label.error + label span,
 .bootstrap label.error + label span + label span {
-  background: #DA5757 !important; }
-
+  background: #DA5757 !important;
+}
 .bootstrap label.error,
 .bootstrap input:active label,
 .bootstrap input:active:not(:focus) + label,
@@ -267,8 +270,8 @@ form input[type="submit"] {
   padding: 0 15px !important;
   margin-top: -18px;
   font-size: 10px !important;
-  z-index: 12; }
-
+  z-index: 12;
+}
 .bootstrap input.valid:valid:not(:focus) + label span,
 .bootstrap input.valid:valid:not(:focus) + label span + label, .bootstrap span
 textarea.valid:valid:not(:focus) + label span,
@@ -283,13 +286,14 @@ textarea.valid:valid:not(:focus) + label span,
   display: block;
   width: 100%;
   margin: 0 !important;
-  padding: 1px 3px; }
-
+  padding: 1px 3px;
+}
 .bootstrap label,
 .bootstrap input:focus label span,
 .bootstrap input:active label span {
   padding: 5px 20px !important;
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 input[type="radio"] + label,
 input[type="checkbox"] + label
@@ -298,7 +302,8 @@ select + label {
   -webkit-transition: none;
   transition: none;
   position: relative;
-  padding: 0 !important; }
+  padding: 0 !important;
+}
 
 .lf-select select {
   background: transparent;
@@ -307,15 +312,18 @@ select + label {
   border: none;
   border-radius: 0;
   border: 2px solid #545454;
-  padding: 5px 2px; }
+  padding: 5px 2px;
+}
 
 .lf-select select:focus {
-  outline: none; }
+  outline: none;
+}
 
 .lf-radio,
 .lf-checkbox {
   position: relative;
-  margin: 5px 0; }
+  margin: 5px 0;
+}
 
 .lf-radio input,
 .lf-checkbox input {
@@ -324,7 +332,8 @@ select + label {
   margin: 0 !important;
   font-size: inherit !important;
   position: absolute !important;
-  height: 100%; }
+  height: 100%;
+}
 
 .lf-radio input + label,
 .lf-checkbox input + label,
@@ -342,7 +351,8 @@ select + label {
 .lf-checkbox input.valid:valid:not(:focus) + label {
   margin: 0 !important;
   font-size: inherit !important;
-  padding: 0 !important; }
+  padding: 0 !important;
+}
 
 .lf-radio input,
 .lf-radio label,
@@ -351,11 +361,13 @@ select + label {
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
-  position: absolute; }
+  position: absolute;
+}
 
 .lf-radio label,
 .lf-checkbox label {
-  position: relative; }
+  position: relative;
+}
 
 .lf-radio input + label::before,
 .lf-checkbox input + label::before,
@@ -368,23 +380,41 @@ select + label {
   width: 20px;
   height: 20px;
   padding: 2px;
-  margin-right: 10px; }
+  margin-right: 10px;
+}
 
 .lf-radio input + label::before,
 .lf-radio input.error + label + label::before {
-  border-radius: 50%; }
+  border-radius: 50%;
+}
 
 .lf-radio input:checked + label::before,
 .lf-checkbox input:checked + label::before {
-  background: #366b7b; }
+  background: #366b7b;
+}
 
 .lf-radio input.error + label::before,
 .lf-checkbox input.error + label::before {
-  background: #DA5757; }
+  background: #DA5757;
+}
 
 .lf-radio input.error + label,
 .lf-checkbox input.error + label {
-  text-transform: inherit !important; }
+  text-transform: inherit !important;
+}
+
+/* additional radio and checkboxes */
+.lf-radio.radio-hollow input:checked + label::before {
+  background: white;
+  border: 6px solid #366b7b;
+}
+
+.lf-checkbox.checkbox-check input:checked + label::before {
+  font-family: 'Glyphicons Halflings';
+  content: "\e013";
+  color: white;
+  padding: 0 0 0px 3px;
+}
 
 .no-csstransitions input,
 .no-csstransitions textarea {
@@ -393,8 +423,8 @@ select + label {
   border-top: 2px solid #545454;
   border-right: 2px solid #545454;
   border-bottom: none;
-  border-left: 2px solid #545454; }
-
+  border-left: 2px solid #545454;
+}
 .no-csstransitions label {
   position: relative !important;
   background-color: #545454 !important;
@@ -403,11 +433,11 @@ select + label {
   border-top: none;
   border-right: 2px solid #545454;
   border-bottom: 2px solid #545454;
-  border-left: 2px solid #545454; }
-
+  border-left: 2px solid #545454;
+}
 .no-csstransitions label {
-  color: white !important; }
-
+  color: white !important;
+}
 .no-csstransitions .lf-checkbox label,
 .no-csstransitions .lf-checkbox label + label,
 .no-csstransitions .lf-radio label,
@@ -428,30 +458,30 @@ select + label {
 .no-csstransitions .lf-checkbox input.error:focus + label + label {
   background-color: transparent !important;
   border: none !important;
-  color: #545454 !important; }
-
+  color: #545454 !important;
+}
 .no-csstransitions .lf-radio input.error + label,
 .no-csstransitions .lf-radio input.error + label + label,
 .no-csstransitions .lf-checkbox input.error + label,
 .no-csstransitions .lf-checkbox input.error + label + label {
-  border: none !important; }
-
+  border: none !important;
+}
 .no-csstransitions input.error,
 .no-csstransitions textarea.error {
   padding: 0;
   border-top: 2px solid #DA5757;
   border-right: 2px solid #DA5757;
   border-bottom: none !important;
-  border-left: 2px solid #DA5757; }
-
+  border-left: 2px solid #DA5757;
+}
 .no-csstransitions input.error + label span,
 .no-csstransitions input.error + label span + label span,
 .no-csstransitions textarea.error + label span,
 .no-csstransitions textarea.error + label span + label span {
   background: none !important;
   font-size: 9px;
-  padding: 1px; }
-
+  padding: 1px;
+}
 .no-csstransitions input.error + label,
 .no-csstransitions input.error + label + label {
   /* errors */
@@ -459,23 +489,23 @@ select + label {
   border-top: none;
   border-right: 2px solid #DA5757 !important;
   border-bottom: none !important;
-  border-left: 2px solid #DA5757 !important; }
-
+  border-left: 2px solid #DA5757 !important;
+}
 .no-csstransitions input.error:focus {
   /* active errors */
   border-top: 2px solid #366b7b !important;
   border-right: 2px solid #366b7b !important;
   border-bottom: none !important;
-  border-left: 2px solid #366b7b !important; }
-
+  border-left: 2px solid #366b7b !important;
+}
 .no-csstransitions input.error:focus + label {
   /* active errors */
   background: #366b7b !important;
   border-top: none;
   border-right: 2px solid #366b7b !important;
   border-bottom: none !important;
-  border-left: 2px solid #366b7b !important; }
-
+  border-left: 2px solid #366b7b !important;
+}
 .no-csstransitions input:focus + label,
 .no-csstransitions input:focus + label + label
 textarea:focus + label,
@@ -484,5 +514,5 @@ textarea:focus + label,
   border-top: none;
   border-right: 2px solid #366b7b;
   border-bottom: 2px solid #366b7b;
-  border-left: 2px solid #366b7b; }
-/*# sourceMappingURL=LabelFloat.css.map */
+  border-left: 2px solid #366b7b;
+}

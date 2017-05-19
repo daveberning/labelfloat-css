@@ -110,7 +110,7 @@ The same basic HTML structure applies, just make sure you wrap your entire form 
 </div><!-- end bootstrap -->
 ```
 
-*Structure your Bootstrap form anyway you like. Any column size, any number of <div>'s etc.
+*Structure your Bootstrap form anyway you like. Any column size, any number of div's etc.
 
 # Customizations
 ```scss

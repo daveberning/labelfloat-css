@@ -112,25 +112,13 @@ The same basic HTML structure applies, just make sure you wrap your entire form 
 *Structure your Bootstrap form anyway you like. Any column size, any number of <div>'s etc.
 
 # Customizations
-```css
-/* COLOR CODES: FIND AND REPLACE
-	----------------------------------------
-	    VALID FOCUS STATE: #366b7b; (demo: blue)
-	    VALID NOT FOCUS STATE: #ccc; (demo: grey)
-	    INVALID FOCUS STATE: #DA5757; (demo: red)
-
-	    SUBMIT BUTTON: #747474;
-	    SUBMIT BUTTOB HOVER: #464646;
-
-	    *NOTE: Any color you find and replace
-	    will also replace the border color
-	    for its respected states;
-	--------------------------------------*/
+```scss
+    $validFocus: #366b7b; // demo: blue
+    $validNoFocus: #545454; // demo: grey
+    $invalid: #DA5757; // demo: red
+    $submit: #747474;
 ```
-Change the colors to the focus, inactive, and invalid focus states! Just find and replace the above HEX codes with another or other color value.
-
-#Updates Planned
-Version 2 will come with refactored code and SASS support. Other package managers are planned to be supported soon.
+The easiest way to make color changes is to modify the variables in the SASS file. If you are using the compiled CSS file, you can find and replace the HEX codes above.
 
 # Change Log
 * **V1.1.1:** Bower support. Install away!

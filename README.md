@@ -1,6 +1,6 @@
 # Getting Started
 
-LabelFloat.css is a plugin developed by Dave Berning. This plugin makes creating exciting animated forms quick and easy. It's based off of Chris Coyier's take on stylized floating labels; using labels as placeholders. Installation is simple and creating your webform is just as easy (as long as you follow the proper HTML structure). Let's get started!
+LabelFloat.css is a plugin developed by Dave Berning. This plugin makes creating exciting animated forms quick and easy. It's based off of Chris Coyier's take on stylized floating labels; using labels as placeholders. Installation is simple and creating your HTML form is just as easy (as long as you follow the proper HTML structure). Let's get started!
 
 LabelFloat.css is compatible with *Chrome, Firefox, Safari, Opera, Edge, and Internet Explorer 9 and up*.
 
@@ -30,7 +30,6 @@ This is optional, but you can reference LabelFloat.js instead of using **Moderni
 ```
 $ bower install labelfloat-css
 ```
-
 
 ## Initialize jQuery Validate
 ```html
@@ -128,7 +127,7 @@ The easiest way to make color changes is to modify the variables in the SASS fil
 * **V1:** Uploaded LabelFloat.css and LabelFloat.js
 
 # Support
-For support, please email: dave@daveberning.com
+For support, please email: dave@parsecdigital.io
 Visit: http://daveberning.github.io/LabelFloat.css/
 
 # License
